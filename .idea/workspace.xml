@@ -4,17 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f6d5361-dd0c-4ce3-82dd-9b5bf22e80fe" name="Changes" comment="Authentication and User's basic features are working">
+    <list default="true" id="1f6d5361-dd0c-4ce3-82dd-9b5bf22e80fe" name="Changes" comment="Added delete user">
+      <change afterPath="$PROJECT_DIR$/Post/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Post/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Post/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Post/controller/PostController.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Post/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Post/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Post/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Post/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Post/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Post/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charchaBackend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/charchaBackend/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charchaBackend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/charchaBackend/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -26,6 +39,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Samarth-Nasnodkar"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Samarth-Nasnodkar/charchaBackend.git",
+    "accountId": "ed1c79d4-1a0b-45ab-b9c2-afc710aa4e7a"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -37,20 +62,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="charchaBackend" type="Python.DjangoServer" factoryName="Django server">
       <module name="charchaBackend" />
@@ -95,7 +121,7 @@
       <updated>1718636588988</updated>
       <workItem from="1718636597039" duration="30000" />
       <workItem from="1718636632410" duration="4734000" />
-      <workItem from="1718815760340" duration="6958000" />
+      <workItem from="1718815760340" duration="9949000" />
     </task>
     <task id="LOCAL-00001" summary="Authentication and User's basic features are working">
       <option name="closed" value="true" />
@@ -105,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718881110250</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added delete user">
+      <option name="closed" value="true" />
+      <created>1718882285096</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718882285096</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +159,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Authentication and User's basic features are working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Authentication and User's basic features are working" />
+    <MESSAGE value="Added delete user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added delete user" />
   </component>
 </project>

@@ -11,4 +11,4 @@ class User(models.Model):
     created_at = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
-        return '({}, {})'.format(self.username, self.email)
+        return '<@{}, {}>'.format(self.username, self.email)
