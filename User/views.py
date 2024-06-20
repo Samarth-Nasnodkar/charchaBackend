@@ -43,3 +43,22 @@ def updateUser(request):
         return HttpResponse('Update failed')
 
     return HttpResponse(UserController.serialize(userController.user), content_type='application/json')
+
+
+@csrf_exempt
+def deleteUser(request):
+    body_unicode = request.body.decode('utf-8')
+    body = json.loads(body_unicode)
+
+    email = body.get('email', '')
+    userController = UserController(email)
+    if not userController.userExists:
+        return HttpResponse('Not user exists with email <{}>'.format(email))
+
+    try:
+        userController.deleteUser()
+    except Exception as e:
+        print(e)
+        return HttpResponse('Delete failed')
+    else:
+        return HttpResponse('User deleted')

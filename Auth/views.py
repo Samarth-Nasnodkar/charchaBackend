@@ -17,7 +17,7 @@ def register_user(request):
 
     # print(username, email, password, profile_picture_url)
     if profile_picture_url == '':
-        profile_picture_url = 'https://api.dicebear.com/9.x/micah/svg'
+        profile_picture_url = 'https://api.dicebear.com/9.x/micah/svg?seed=' + username
     res = AuthController.register(username, email, password, profile_picture_url)
     if res is None:
         return HttpResponse('User already exists')
