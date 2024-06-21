@@ -4,17 +4,27 @@ from Auth.controller.AuthController import AuthController
 
 
 class UserController:
-    def __init__(self, email: str = '') -> None:
+    def __init__(self, email: str = '', username: str = '') -> None:
         self.user = None
         self.exists = False
-        self.initUser(email)
+        if email:
+            self.initFromEmail(email)
+        elif username:
+            self.initFromUsername(username)
 
     @property
     def userExists(self) -> bool:
         return self.exists
 
-    def initUser(self, email: str) -> None:
+    def initFromEmail(self, email: str) -> None:
         dbUserQuerySet = User.objects.filter(email=email)
+        if dbUserQuerySet.exists():
+            dbUser = dbUserQuerySet.first()
+            self.exists = True
+            self.user = dbUser
+
+    def initFromUsername(self, username: str) -> None:
+        dbUserQuerySet = User.objects.filter(username=username)
         if dbUserQuerySet.exists():
             dbUser = dbUserQuerySet.first()
             self.exists = True
@@ -41,7 +51,6 @@ class UserController:
     def fetchAllUsers():
         users = User.objects.all()
         userList = [UserController.toDict(user) for user in users]
-        # print('userlist = ', userList)
         return json.dumps(userList)
 
     def updateUserField(self, field: str, value) -> bool:

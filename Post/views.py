@@ -1,3 +1,5 @@
+import uuid
+
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -52,3 +54,33 @@ def fetch_all_posts(request):
     allPosts = Post.objects.all()
     postsList = [PostController.toDict(post) for post in allPosts]
     return HttpResponse(json.dumps(postsList), content_type='application/json')
+
+
+@csrf_exempt
+def fetch_posts_by_author(request, username):
+    """
+    Handles the endpoint '/post/author/<username>'
+
+    Takes parameters from url path
+    The parameters are
+    username : str [The email of the author of the post]
+
+    Returns a list of all serialized posts by the author as json
+    """
+    author = UserController(username=username)
+    if not author.userExists:
+        return HttpResponse(json.dumps([]), content_type='application/json')
+
+    authorPosts = PostController.fetchPostsByAuthor(author.user)
+    serialisedPosts = [PostController.toDict(post) for post in authorPosts]
+    return HttpResponse(json.dumps(serialisedPosts), content_type='application/json')
+
+
+@csrf_exempt
+def fetch_post(request, post_id):
+    post_id = uuid.UUID(post_id)
+    postController = PostController(post_id)
+    if not postController.postExists:
+        return HttpResponse(json.dumps({}), content_type='application/json')
+
+    return HttpResponse(PostController.serializePost(postController.post), content_type='application/json')

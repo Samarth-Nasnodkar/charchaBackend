@@ -2,8 +2,9 @@ import json
 
 from ..models import Post
 import uuid
-from typing import Optional
+from typing import Optional, List
 from User.controller.UserController import UserController
+from User.models import User
 
 
 class PostController:
@@ -26,6 +27,11 @@ class PostController:
         newPost = Post(title=title, content=content, author=author)
         newPost.save()
         return newPost
+
+    @staticmethod
+    def fetchPostsByAuthor(author: User) -> List[Post]:
+        posts = Post.objects.filter(author=author).all()
+        return list(posts)
 
     def deletePost(self):
         if self.postExists:
@@ -56,6 +62,7 @@ class PostController:
     @staticmethod
     def toDict(post: Post) -> dict:
         return {
+            'id': str(post.id),
             'title': post.title,
             'content': post.content,
             'author': UserController.toDict(post.author)

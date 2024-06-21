@@ -8,11 +8,10 @@ from .controller.UserController import UserController
 
 # Create your views here.
 @csrf_exempt
-def fetchUser(request):
-    email = request.GET.get('email')
-    userController = UserController(email)
+def fetchUser(request, username):
+    userController = UserController(username=username)
     if not userController.userExists:
-        return HttpResponse('Not user exists with email <{}>'.format(email))
+        return HttpResponse('Not user exists with username <{}>'.format(username))
 
     return HttpResponse(userController.serialize(userController.user), content_type='application/json')
 
