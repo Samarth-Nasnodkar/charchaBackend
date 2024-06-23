@@ -67,11 +67,7 @@ def fetch_posts_by_author(request, username):
 
     Returns a list of all serialized posts by the author as json
     """
-    author = UserController(username=username)
-    if not author.userExists:
-        return HttpResponse(json.dumps([]), content_type='application/json')
-
-    authorPosts = PostController.fetchPostsByAuthor(author.user)
+    authorPosts = PostController.fetchPostsByAuthorUsername(username)
     serialisedPosts = [PostController.toDict(post) for post in authorPosts]
     return HttpResponse(json.dumps(serialisedPosts), content_type='application/json')
 

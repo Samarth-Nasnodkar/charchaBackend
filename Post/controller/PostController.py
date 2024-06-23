@@ -33,6 +33,11 @@ class PostController:
         posts = Post.objects.filter(author=author).all()
         return list(posts)
 
+    @staticmethod
+    def fetchPostsByAuthorUsername(author_username: str) -> List[Post]:
+        posts = Post.objects.filter(author__username=author_username).all()
+        return list(posts)
+
     def deletePost(self):
         if self.postExists:
             self.post.delete()

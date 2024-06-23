@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f6d5361-dd0c-4ce3-82dd-9b5bf22e80fe" name="Changes" comment="Cleaning the code&#10;-&gt; Commenting">
+    <list default="true" id="1f6d5361-dd0c-4ce3-82dd-9b5bf22e80fe" name="Changes" comment="Nearly finished Post app">
+      <change afterPath="$PROJECT_DIR$/Comment/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comment/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comment/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comment/controller/CommentController.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comment/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comment/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comment/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comment/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comment/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comment/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Post/controller/PostController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Post/controller/PostController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Post/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Post/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Post/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Post/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/controller/UserController.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/controller/UserController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charchaBackend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/charchaBackend/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charchaBackend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/charchaBackend/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +122,7 @@
       <updated>1718636588988</updated>
       <workItem from="1718636597039" duration="30000" />
       <workItem from="1718636632410" duration="4734000" />
-      <workItem from="1718815760340" duration="17117000" />
+      <workItem from="1718815760340" duration="22285000" />
     </task>
     <task id="LOCAL-00001" summary="Authentication and User's basic features are working">
       <option name="closed" value="true" />
@@ -147,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718941839001</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Nearly finished Post app">
+      <option name="closed" value="true" />
+      <created>1718964048715</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718964048715</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +187,7 @@
     <MESSAGE value="Added delete user" />
     <MESSAGE value="Created the post app" />
     <MESSAGE value="Cleaning the code&#10;-&gt; Commenting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaning the code&#10;-&gt; Commenting" />
+    <MESSAGE value="Nearly finished Post app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nearly finished Post app" />
   </component>
 </project>

@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "User",
     "Post",
-    "Auth"
+    "Auth",
+    "Comment"
 ]
 
 MIDDLEWARE = [
