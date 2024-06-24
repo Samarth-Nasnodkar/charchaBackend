@@ -4,23 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f6d5361-dd0c-4ce3-82dd-9b5bf22e80fe" name="Changes" comment="Nearly finished Post app">
-      <change afterPath="$PROJECT_DIR$/Comment/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment/controller/CommentController.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment/views.py" afterDir="false" />
+    <list default="true" id="1f6d5361-dd0c-4ce3-82dd-9b5bf22e80fe" name="Changes" comment="Added comments!">
+      <change afterPath="$PROJECT_DIR$/Attachment/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attachment/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attachment/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attachment/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attachment/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attachment/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attachment/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Post/controller/PostController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Post/controller/PostController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Post/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Post/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charchaBackend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/charchaBackend/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charchaBackend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/charchaBackend/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,18 +33,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Samarth-Nasnodkar"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Samarth-Nasnodkar&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Samarth-Nasnodkar/charchaBackend.git",
-    "accountId": "ed1c79d4-1a0b-45ab-b9c2-afc710aa4e7a"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Samarth-Nasnodkar/charchaBackend.git&quot;,
+    &quot;accountId&quot;: &quot;ed1c79d4-1a0b-45ab-b9c2-afc710aa4e7a&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -63,21 +56,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="charchaBackend" type="Python.DjangoServer" factoryName="Django server">
       <module name="charchaBackend" />
@@ -122,7 +115,8 @@
       <updated>1718636588988</updated>
       <workItem from="1718636597039" duration="30000" />
       <workItem from="1718636632410" duration="4734000" />
-      <workItem from="1718815760340" duration="22285000" />
+      <workItem from="1718815760340" duration="22973000" />
+      <workItem from="1719220573636" duration="4674000" />
     </task>
     <task id="LOCAL-00001" summary="Authentication and User's basic features are working">
       <option name="closed" value="true" />
@@ -164,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718964048715</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added comments!">
+      <option name="closed" value="true" />
+      <created>1719153338562</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719153338563</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +190,7 @@
     <MESSAGE value="Created the post app" />
     <MESSAGE value="Cleaning the code&#10;-&gt; Commenting" />
     <MESSAGE value="Nearly finished Post app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nearly finished Post app" />
+    <MESSAGE value="Added comments!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comments!" />
   </component>
 </project>
