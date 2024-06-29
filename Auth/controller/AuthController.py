@@ -4,6 +4,8 @@ from User.models import User
 import hashlib
 from typing import Optional
 
+from Session.controller.SessionController import SessionController
+
 
 class AuthController:
     """
@@ -26,7 +28,7 @@ class AuthController:
         return User.objects.filter(email=email).exists()
 
     @staticmethod
-    def login(email: str, password: str) -> Optional[User]:
+    def loginWithEmail(email: str, password: str) -> Optional[User]:
         """
         Logs the given user in.
         Returns the user if login was successful.
@@ -35,6 +37,28 @@ class AuthController:
         try:
             # Fetching user from Database
             dbUser = User.objects.get(email=email)
+        except User.DoesNotExist:
+            # Returning None as user doesn't exist
+            return None
+
+        # Hashing the password
+        hashedPassword = AuthController.hashPassword(password)
+        if dbUser.password == hashedPassword:
+            # Log-in successful
+            return dbUser
+        # log-in unsuccessful
+        return None
+
+    @staticmethod
+    def loginWithUsername(username: str, password: str) -> Optional[User]:
+        """
+        Logs the given user in.
+        Returns the user if login was successful.
+        Returns None otherwise
+        """
+        try:
+            # Fetching user from Database
+            dbUser = User.objects.get(username=username)
         except User.DoesNotExist:
             # Returning None as user doesn't exist
             return None

@@ -12,3 +12,11 @@ class User(models.Model):
 
     def __str__(self):
         return '<@{}, {}>'.format(self.username, self.email)
+
+    def toDict(self) -> dict:
+        return {
+            'username': self.username,
+            'email': self.email,
+            'password': self.password,
+            'profile_picture': self.profile_picture,
+        }

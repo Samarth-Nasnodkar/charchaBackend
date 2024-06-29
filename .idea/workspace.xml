@@ -4,16 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f6d5361-dd0c-4ce3-82dd-9b5bf22e80fe" name="Changes" comment="Added comments!">
-      <change afterPath="$PROJECT_DIR$/Attachment/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Attachment/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Attachment/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Attachment/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Attachment/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Attachment/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Attachment/views.py" afterDir="false" />
+    <list default="true" id="1f6d5361-dd0c-4ce3-82dd-9b5bf22e80fe" name="Changes" comment="Working with frontend!!">
+      <change afterPath="$PROJECT_DIR$/Session/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session/controller/SessionController.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Session/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auth/controller/AuthController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/controller/AuthController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Auth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/User/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charchaBackend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/charchaBackend/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +123,9 @@
       <workItem from="1718636597039" duration="30000" />
       <workItem from="1718636632410" duration="4734000" />
       <workItem from="1718815760340" duration="22973000" />
-      <workItem from="1719220573636" duration="4674000" />
+      <workItem from="1719220573636" duration="6411000" />
+      <workItem from="1719335883074" duration="5506000" />
+      <workItem from="1719680787458" duration="910000" />
     </task>
     <task id="LOCAL-00001" summary="Authentication and User's basic features are working">
       <option name="closed" value="true" />
@@ -166,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719153338563</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Working with frontend!!">
+      <option name="closed" value="true" />
+      <created>1719243828641</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719243828641</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +208,7 @@
     <MESSAGE value="Cleaning the code&#10;-&gt; Commenting" />
     <MESSAGE value="Nearly finished Post app" />
     <MESSAGE value="Added comments!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added comments!" />
+    <MESSAGE value="Working with frontend!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working with frontend!!" />
   </component>
 </project>

@@ -1,8 +1,11 @@
 from django.shortcuts import render, HttpResponse
+
+from Session.controller.SessionController import SessionController
 from .controller.AuthController import AuthController
 from User.controller.UserController import UserController
 from django.views.decorators.csrf import csrf_exempt
 import json
+import uuid
 
 
 # Create your views here.
@@ -64,14 +67,29 @@ def login_user(request):
     body = json.loads(body_unicode)
 
     # getting the values of the necessary fields
-    email = body.get('email', '')
+    username = body.get('username', '')
     password = body.get('password', '')
 
-    loggedUser = AuthController.login(email, password)
-
+    loggedUser = AuthController.loginWithUsername(username, password)
+    # return SessionController.serialize(session)
     # Handling error in case of unsuccessful login
     if loggedUser is None:
         return HttpResponse('Invalid login details')
 
+    session = SessionController.newSession(loggedUser)
+
     # Returning the logged-in user as JSON
-    return HttpResponse(UserController.serialize(loggedUser), content_type='application/json')
+    return HttpResponse(SessionController.serialize(session), content_type='application/json')
+
+
+@csrf_exempt
+def login_session(request, session_token):
+    session_token = uuid.UUID(session_token)
+
+    sessionController = SessionController(session_token)
+    sessionUser = sessionController.validateSession()
+    if sessionUser is None:
+        return HttpResponse('Invalid session token')
+
+    return HttpResponse(UserController.serialize(sessionUser), content_type='application/json')
+
